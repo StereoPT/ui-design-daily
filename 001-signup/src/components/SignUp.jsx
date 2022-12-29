@@ -34,9 +34,9 @@ const SignUp = () => {
 
   return (
     <form className='grid gap-y-8' onSubmit={handleSubmitForm}>
-      <Input inputIcon='/images/user.svg' type='text' name='username' id='username' placeholder='Username' value={form.username} onChange={handleFormInput} />
-      <Input inputIcon='/images/email.svg' type='email' name='email' id='email' placeholder='Email' value={form.email} onChange={handleFormInput} />
-      <Input inputIcon='/images/pass.svg' type='password' name='password' id='password' placeholder='Password' value={form.password} onChange={handleFormInput} />
+      <Input icon='user' type='text' name='username' id='username' placeholder='Username' value={form.username} onChange={handleFormInput} />
+      <Input icon='mail' type='email' name='email' id='email' placeholder='Email' value={form.email} onChange={handleFormInput} />
+      <Input icon='pass' type='password' name='password' id='password' placeholder='Password' value={form.password} onChange={handleFormInput} />
       <div className='flex justify-evenly px-4'>
         <div className='text-sm'>
           <Radio id='male' name='gender' value="M" defaultChecked={form.gender} onChange={handleFormInput}>Male</Radio>

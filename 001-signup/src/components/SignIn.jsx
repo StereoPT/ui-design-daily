@@ -35,8 +35,8 @@ const SignIn = () => {
 
   return (
     <form className='grid gap-y-8' onSubmit={handleSubmitForm}>
-      <Input inputIcon='/images/user.svg' type='text' name='username' id='username' placeholder='Username' value={form.username} onChange={handleFormInput} />
-      <Input inputIcon='/images/pass.svg' type='password' name='password' id='password' placeholder='Password' value={form.password} onChange={handleFormInput} />
+      <Input icon='user' type='text' name='username' id='username' placeholder='Username' value={form.username} onChange={handleFormInput} />
+      <Input icon='pass' type='password' name='password' id='password' placeholder='Password' value={form.password} onChange={handleFormInput} />
       <div className='flex justify-between px-2'>
         <div className='text-xs'>
           <Checkbox id="remember" name="remember" defaultChecked={form.remember} onChange={handleFormInput}>Remember me</Checkbox>
