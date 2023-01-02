@@ -23,8 +23,6 @@ const SignIn = () => {
   }
 
   const handleFormInput = ({ target: input }) => {
-    console.log(input.value);
-
     setForm((prevUser) => {
       return {
         ...prevUser,
